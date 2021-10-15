@@ -42,5 +42,15 @@ namespace WpfAtletiMVC.Views
             discipline = new ObservableCollection<Disciplina>(model.getAll());
             this.DataContext = this;
         }
+
+        private void AnnullaDettaglio_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void OkDettaglio_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

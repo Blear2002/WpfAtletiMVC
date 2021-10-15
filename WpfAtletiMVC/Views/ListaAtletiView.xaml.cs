@@ -81,7 +81,10 @@ namespace WpfAtletiMVC.Views
 
         private void Elimina_Click(object sender, RoutedEventArgs e)
         {
-
+            if (dgAtleti.SelectedItem != null)
+                atleti.Remove((Atleta)dgAtleti.SelectedItem); //elimina l'atleta
+            else
+                MessageBox.Show("Non hai selezioanto nessun atleta!", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

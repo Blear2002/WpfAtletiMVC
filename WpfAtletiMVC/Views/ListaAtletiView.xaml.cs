@@ -86,5 +86,15 @@ namespace WpfAtletiMVC.Views
             else
                 MessageBox.Show("Non hai selezioanto nessun atleta!", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
         }
+
+        private void Esci_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Versione attuale Esempio:1.0.0", "Info");            
+        }
     }
 }
